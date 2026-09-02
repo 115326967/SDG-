@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seeed for SDGs — Open technology for sustainable action</title>
+  <meta name="description" content="Seeed Studio works with researchers, organizations, and communities to turn sustainability ideas into working solutions." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ======================= NAV ======================= -->
+  <header class="site-head" id="site-head">
+    <div class="container site-head__bar">
+      <a class="brand" href="#hero" aria-label="Seeed for SDGs">
+        <img class="brand__logo" src="2-图片/Seeedstudio彩色LOGO.svg" alt="Seeed Studio" />
+        <span class="brand__bar" aria-hidden="true"></span>
+        <span class="brand__name">Seeed <b>for SDGs</b></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a class="nav__link" href="#challenges"><span data-i18n="nav.challenges">Challenges</span></a>
+        <a class="nav__link" href="#stories"><span data-i18n="nav.stories">Stories</span></a>
+        <a class="nav__link" href="#enable"><span data-i18n="nav.enable">How We Enable</span></a>
+        <a class="nav__link" href="#field"><span data-i18n="nav.field">Field Innovation</span></a>
+        <a class="nav__link" href="#responsibility"><span data-i18n="nav.responsibility">Responsibility</span></a>
+        <a class="nav__cta" href="#collaborate"><span data-i18n="nav.collaborate">Collaborate</span></a>
+
+        <div class="lang" id="lang">
+          <button class="lang__btn" id="lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Language">EN ▾</button>
+          <ul class="lang__menu" id="lang-menu" role="listbox">
+            <li><button class="lang__opt is-active" data-lang="en" role="option" aria-selected="true">English</button></li>
+            <li><button class="lang__opt" data-lang="cn" role="option" aria-selected="false">中文</button></li>
+          </ul>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ======================= 1. HERO ======================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__mark">›</span> <span data-i18n="hero.eyebrow">SEEED FOR SDGs</span></p>
+          <h1 class="hero__title">
+            <span data-i18n="hero.title1">Open technology for</span><br />
+            <span class="hero__hl" data-i18n="hero.title2">sustainable actions.</span>
+          </h1>
+          <p class="hero__lead" data-i18n="hero.lead">
+            From open hardware and sensing to edge AI and real-world deployment, Seeed works
+            with researchers, organizations, and communities to turn sustainability ideas
+            into working solutions.
+          </p>
+          <ul class="hero__tags" aria-hidden="true">
+            <li data-i18n="hero.tag1">Field Research</li>
+            <li data-i18n="hero.tag2">Edge AI</li>
+            <li data-i18n="hero.tag3">Environmental Sensing</li>
+          </ul>
+        </div>
+
+        <!-- Featured initiative panel -->
+        <aside class="feature" aria-label="Featured initiative">
+          <span class="tag" data-i18n="hero.featured.tag">Featured initiative · Interspecies</span>
+          <p class="feature__copy" data-i18n="hero.featured.copy">
+            Exploring new ways technology can help us sense, understand, and coexist with
+            other species.
+          </p>
+          <a class="link-arrow" href="#" data-pending="Interspecies landing page in development">
+            <span data-i18n="hero.featured.cta">Explore Interspecies</span> <span aria-hidden="true">→</span>
+          </a>
+        </aside>
+      </div>
+
+      <div class="container hero__signals">
+        <div class="hero__actions">
+          <a class="btn btn--green hero__btn" href="#challenges"><span data-i18n="hero.cta1">Explore the challenges</span> <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost hero__btn" href="#collaborate"><span data-i18n="hero.cta2">Collaborate with Seeed</span> <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="signals__label" data-i18n="hero.signals.label">Challenge signals</p>
+        <ul class="signals">
+          <li class="signal"><i class="signal__dot" aria-hidden="true"></i><span class="signal__key" data-i18n="hero.s1k">Water</span><span class="signal__val" data-i18n="hero.s1v">Climate &amp; Resources</span></li>
+          <li class="signal"><i class="signal__dot" aria-hidden="true"></i><span class="signal__key" data-i18n="hero.s2k">Education</span><span class="signal__val" data-i18n="hero.s2v">Learning &amp; Open Knowledge</span></li>
+          <li class="signal"><i class="signal__dot" aria-hidden="true"></i><span class="signal__key" data-i18n="hero.s3k">Local Innovation</span><span class="signal__val" data-i18n="hero.s3v">Resilient Communities</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================= 2. WHY SEEED ======================= -->
+    <section class="section section--why" id="why">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow__mark">›</span><span class="eyebrow__no">01</span> <span data-i18n="why.eyebrow">WHY SEEED FOR SDGs</span></p>
+        <h2 class="h2" data-i18n="why.title">Technology as a bridge to sustainable action</h2>
+        <p class="lede why__lede" data-i18n="why.lede">
+          Real progress happens when people who understand a challenge can access the tools
+          to act on it. Seeed connects technology, engineering capabilities, and global
+          communities with people working toward a more sustainable future.
+        </p>
+
+        <!-- System diagram -->
+        <figure class="diagram" aria-label="How Seeed connects local knowledge to real-world action">
+          <div class="diagram__node">
+            <img class="diagram__img" src="2-图片/2-0-local.jpg" alt="" />
+            <span class="diagram__tag" data-i18n="why.dg.local">Local Knowledge</span>
+            <span class="diagram__title" data-i18n="why.dg.local.sub">People who understand the challenge</span>
+          </div>
+          <div class="diagram__bridge">
+            <div class="diagram__icons">
+              <img src="2-图片/2-icon.png" alt="" />
+            </div>
+            <span class="diagram__arrow" aria-hidden="true"></span>
+            <span class="diagram__tag" data-i18n="why.dg.bridge">Open Technology · Engineering · Ecosystem</span>
+          </div>
+          <div class="diagram__node">
+            <img class="diagram__img" src="2-图片/2-0-REAL.jpg" alt="" />
+            <span class="diagram__tag" data-i18n="why.dg.real">Real-world Action</span>
+            <span class="diagram__title" data-i18n="why.dg.real.sub">Solutions shaped by place and evidence</span>
+          </div>
+        </figure>
+
+        <div class="caps caps--media">
+          <div class="cap">
+            <img class="cap__img" src="2-图片/2-1-Tools.png" alt="" />
+            <div>
+              <h3 class="cap__title" data-i18n="why.c1.title">Technology people can build with</h3>
+              <p class="cap__text" data-i18n="why.c1.text">Accessible hardware, sensing, and AI tools designed for experimentation.</p>
+            </div>
+          </div>
+          <div class="cap">
+            <img class="cap__img" src="2-图片/2-2-Field.png" alt="" />
+            <div>
+              <h3 class="cap__title" data-i18n="why.c2.title">From prototype to field</h3>
+              <p class="cap__text" data-i18n="why.c2.text">Supporting the path from an early idea to real-world deployment.</p>
+            </div>
+          </div>
+          <div class="cap">
+            <img class="cap__img" src="2-图片/2-3-People.png" alt="" />
+            <div>
+              <h3 class="cap__title" data-i18n="why.c3.title">Collaboration across ecosystems</h3>
+              <p class="cap__text" data-i18n="why.c3.text">Connecting researchers, organizations, and communities around shared challenges.</p>
+            </div>
+          </div>
+        </div>
+
+        <a class="btn btn--green btn--center" href="#enable"><span data-i18n="why.cta">See how we enable change</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= 3. CHALLENGES ======================= -->
+    <section class="section section--fog" id="challenges">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow__mark">›</span><span class="eyebrow__no">02</span> <span data-i18n="ch.eyebrow">CHALLENGE AREAS</span></p>
+        <div class="head--center">
+          <h2 class="h2" data-i18n="ch.title">Explore real-world challenges</h2>
+          <p class="lede" data-i18n="ch.lede">
+            Aligned with the UN Sustainable Development Goals, we organize our work around
+            four real-world challenges where technology can make a practical difference.
+          </p>
+        </div>
+
+        <div class="challenges">
+          <a class="challenge challenge--featured" href="#" data-pending="Interspecies landing page in development">
+            <span class="challenge__row">
+              <span class="tag" data-i18n="ch.c1.tag">Featured · Interspecies</span>
+            </span>
+            <h3 class="challenge__title" data-i18n="ch.c1.title">Life &amp; Ecosystems</h3>
+            <p class="challenge__text" data-i18n="ch.c1.text">Biodiversity, wildlife, oceans, forests, and new ways to understand other species.</p>
+            <span class="link-arrow"><span data-i18n="ch.c1.cta">Explore Interspecies</span> <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="challenge" href="https://www.seeedstudio.com/blog/sdg-01/" target="_blank" rel="noopener">
+            <span class="challenge__row"><span class="tag" data-i18n="ch.c2.tag">Water · Energy · Agriculture</span></span>
+            <h3 class="challenge__title" data-i18n="ch.c2.title">Climate &amp; Resources</h3>
+            <p class="challenge__text" data-i18n="ch.c2.text">Practical approaches to sensing, resource efficiency, and resilient infrastructure.</p>
+            <span class="link-arrow"><span data-i18n="ch.c2.cta">Explore stories</span> <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="challenge" href="https://www.seeedstudio.com/blog/sdg-01/" target="_blank" rel="noopener">
+            <span class="challenge__row"><span class="tag" data-i18n="ch.c3.tag">Education · Citizen Science</span></span>
+            <h3 class="challenge__title" data-i18n="ch.c3.title">Learning &amp; Open Knowledge</h3>
+            <p class="challenge__text" data-i18n="ch.c3.text">Tools and shared knowledge that help more people learn, make, and participate.</p>
+            <span class="link-arrow"><span data-i18n="ch.c3.cta">Explore stories</span> <span aria-hidden="true">→</span></span>
+          </a>
+
+          <a class="challenge" href="https://www.seeedstudio.com/blog/sdg-01/" target="_blank" rel="noopener">
+            <span class="challenge__row"><span class="tag" data-i18n="ch.c4.tag">Local Innovation · Inclusion</span></span>
+            <h3 class="challenge__title" data-i18n="ch.c4.title">Resilient Communities</h3>
+            <p class="challenge__text" data-i18n="ch.c4.text">Technology shaped around local needs, from communication to community infrastructure.</p>
+            <span class="link-arrow"><span data-i18n="ch.c4.cta">Explore stories</span> <span aria-hidden="true">→</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 4. STORIES ======================= -->
+    <section class="section" id="stories">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow__mark">›</span><span class="eyebrow__no">03</span> <span data-i18n="st.eyebrow">PROOF IN PRACTICE</span></p>
+        <div class="head--center">
+          <h2 class="h2" data-i18n="st.title">Stories from the Field</h2>
+          <p class="lede" data-i18n="st.lede">
+            A closer look at how researchers, organizations, and communities are putting
+            technology to work in the real world.
+          </p>
+        </div>
+
+        <article class="story story--featured">
+          <img class="story__img" src="2-图片/4-1占位置.png" alt="Field story" />
+          <div class="story__body">
+            <span class="tag tag--ghost" data-i18n="st.f.tag">Climate &amp; Resources</span>
+            <h3 class="story__title" data-i18n="st.f.title">Featured field story to be selected</h3>
+            <p class="story__text" data-i18n="st.f.text">
+              Reserved for a proven story that shows the challenge, the technology in use,
+              and what was learned in the field.
+            </p>
+            <p class="meta" data-i18n="st.f.meta">Location / partner to be confirmed</p>
+            <a class="link-arrow" href="#" data-pending="Story pending"><span data-i18n="st.read">Read the story</span> <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <div class="stories">
+          <div class="stories__track">
+          <article class="story">
+            <img class="story__img" src="2-图片/4-1占位置.png" alt="" />
+            <div class="story__body">
+              <span class="tag tag--ghost" data-i18n="st.s1.tag">Learning &amp; Open Knowledge</span>
+              <h3 class="story__title" data-i18n="st.s1.title">Open learning story slot</h3>
+              <p class="story__text" data-i18n="st.s1.text">A future case about tools, workshops, or shared technical knowledge.</p>
+              <a class="link-arrow" href="#" data-pending="Story pending"><span data-i18n="st.read">Read the story</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="story">
+            <img class="story__img" src="2-图片/4-1占位置.png" alt="" />
+            <div class="story__body">
+              <span class="tag tag--ghost" data-i18n="st.s2.tag">Climate &amp; Resources</span>
+              <h3 class="story__title" data-i18n="st.s2.title">Resource sensing story slot</h3>
+              <p class="story__text" data-i18n="st.s2.text">A future case grounded in real measurement, deployment, or infrastructure.</p>
+              <a class="link-arrow" href="#" data-pending="Story pending"><span data-i18n="st.read">Read the story</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="story">
+            <img class="story__img" src="2-图片/4-1占位置.png" alt="" />
+            <div class="story__body">
+              <span class="tag tag--ghost" data-i18n="st.s3.tag">Resilient Communities</span>
+              <h3 class="story__title" data-i18n="st.s3.title">Community innovation story slot</h3>
+              <p class="story__text" data-i18n="st.s3.text">A future case led by local context and a clearly evidenced technology role.</p>
+              <a class="link-arrow" href="#" data-pending="Story pending"><span data-i18n="st.read">Read the story</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="story">
+            <img class="story__img" src="2-图片/4-1占位置.png" alt="" />
+            <div class="story__body">
+              <span class="tag tag--ghost" data-i18n="st.s4.tag">Resilient Communities</span>
+              <h3 class="story__title" data-i18n="st.s4.title">Inclusive technology story slot</h3>
+              <p class="story__text" data-i18n="st.s4.text">A future case showing how collaboration helped a practical solution move forward.</p>
+              <a class="link-arrow" href="#" data-pending="Story pending"><span data-i18n="st.read">Read the story</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+          </div>
+        </div>
+
+        <a class="btn btn--green btn--center" href="https://www.seeedstudio.com/blog/sdg/" target="_blank" rel="noopener"><span data-i18n="st.cta">View all stories</span> <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ======================= 5. HOW WE ENABLE ======================= -->
+    <section class="section section--dark" id="enable">
+      <div class="container">
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__mark">›</span><span class="eyebrow__no">04</span> <span data-i18n="en.eyebrow">TECHNOLOGY IN SERVICE OF IMPACT</span></p>
+        <h2 class="h2" data-i18n="en.title">How We Enable Change</h2>
+        <p class="lede lede--on-dark enable__intro" data-i18n="en.lede">
+          Sustainable ideas need more than inspiration. Seeed brings together technology,
+          platforms, engineering capabilities, and open resources to help promising
+          solutions move forward.
+        </p>
+
+        <div class="enable" id="enable-slider">
+          <div class="enable__viewport">
+          <div class="enable__track" id="enable-track">
+            <div class="enable__item">
+              <div class="enable__media">
+                <img src="2-图片/5-1.jpg" alt="" />
+              </div>
+              <div class="enable__body">
+                <h3 class="enable__title" data-i18n="en.i1.title">Open Technology Toolkit</h3>
+                <p class="enable__text" data-i18n="en.i1.text">Hardware, sensors, edge devices, and open-source building blocks that make ideas testable.</p>
+                <p class="tech-list"><span>XIAO</span><span>SenseCAP</span><span>reCamera</span><span>Sensors</span></p>
+                <a class="link-arrow link-arrow--green" href="https://www.seeed.cc/product-category/products" target="_blank" rel="noopener"><span data-i18n="en.i1.cta">Explore the toolkit</span> <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+
+            <div class="enable__item">
+              <div class="enable__media">
+                <img src="2-图片/5-2.jpg" alt="" />
+              </div>
+              <div class="enable__body">
+                <h3 class="enable__title" data-i18n="en.i2.title">Platforms &amp; Technical Capabilities</h3>
+                <p class="enable__text" data-i18n="en.i2.text">Environmental sensing, connectivity, edge AI, and data workflows working as a system.</p>
+                <p class="flow" aria-label="System flow"><span data-i18n="en.flow1">Sense</span><i aria-hidden="true">→</i><span data-i18n="en.flow2">Connect</span><i aria-hidden="true">→</i><span data-i18n="en.flow3">Compute</span><i aria-hidden="true">→</i><span data-i18n="en.flow4">Understand</span></p>
+                <a class="link-arrow link-arrow--green" href="https://www.seeed.cc/category/solutions" target="_blank" rel="noopener"><span data-i18n="en.i2.cta">Explore our technologies</span> <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+
+            <div class="enable__item">
+              <div class="enable__media">
+                <img src="2-图片/5-3.jpg" alt="" />
+              </div>
+              <div class="enable__body">
+                <h3 class="enable__title" data-i18n="en.i3.title">From Prototype to Field</h3>
+                <p class="enable__text" data-i18n="en.i3.text">Selected collaborations can access technical guidance, prototyping support, engineering resources, and pathways toward deployment or manufacturing.</p>
+                <p class="tech-list"><span class="tech-list__soft" data-i18n="en.i3.tag">Selective · Case by case</span></p>
+                <a class="link-arrow link-arrow--green" href="#collaborate"><span data-i18n="en.i3.cta">Talk to us about a project</span> <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+
+            <div class="enable__item">
+              <div class="enable__media">
+                <img src="2-图片/5-4.jpg" alt="" />
+              </div>
+              <div class="enable__body">
+                <h3 class="enable__title" data-i18n="en.i4.title">Knowledge &amp; Ecosystem</h3>
+                <p class="enable__text" data-i18n="en.i4.text">Tutorials, workshops, makerspaces, FabLabs, Chaihuo, and global community connections.</p>
+                <p class="tech-list"><span class="tech-list__soft" data-i18n="en.i4.tag">Learn · Share · Build together</span></p>
+                <a class="link-arrow link-arrow--green" href="https://wiki.seeedstudio.com/" target="_blank" rel="noopener"><span data-i18n="en.i4.cta">Explore learning &amp; community</span> <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <button class="enable__nav enable__nav--prev" type="button" aria-label="Previous slide">‹</button>
+          <button class="enable__nav enable__nav--next" type="button" aria-label="Next slide">›</button>
+
+          <div class="enable__dots">
+            <button class="enable__dot is-active" type="button" aria-label="Slide 1"></button>
+            <button class="enable__dot" type="button" aria-label="Slide 2"></button>
+            <button class="enable__dot" type="button" aria-label="Slide 3"></button>
+            <button class="enable__dot" type="button" aria-label="Slide 4"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 6. CHAIHUO MCV ======================= -->
+    <section class="section section--mcv" id="field">
+      <div class="container mcv">
+        <div class="mcv__copy">
+          <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__mark">›</span><span class="eyebrow__no">05</span> <span data-i18n="mcv.eyebrow">SIGNATURE FIELD CAPABILITY</span></p>
+          <h2 class="h2" data-i18n="mcv.title">Take Innovation to the Field</h2>
+          <p class="lede lede--on-dark" data-i18n="mcv.lede">
+            Some challenges cannot be solved from behind a desk. Chaihuo MCV is a mobile
+            innovation platform designed to bring tools, people, and experimentation
+            directly into the field.
+          </p>
+          <p class="mcv__sub" data-i18n="mcv.sub">
+            From workshops and prototyping to environmental sensing and community deployment,
+            the mobile lab creates space for technology to meet local realities.
+          </p>
+          <ul class="tags">
+            <li class="tag" data-i18n="mcv.t1">Workshops</li>
+            <li class="tag" data-i18n="mcv.t2">Rapid Prototyping</li>
+            <li class="tag" data-i18n="mcv.t3">Environmental Sensing</li>
+            <li class="tag" data-i18n="mcv.t4">Community Deployment</li>
+          </ul>
+          <a class="btn btn--green" href="https://mcv.chaihuo.org/en" target="_blank" rel="noopener"><span data-i18n="mcv.cta">Explore Chaihuo MCV</span> <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 7. RESPONSIBILITY ======================= -->
+    <section class="section section--fog" id="responsibility">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow__mark">›</span><span class="eyebrow__no">06</span> <span data-i18n="res.eyebrow">HOW WE OPERATE</span></p>
+        <h2 class="h2" data-i18n="res.title">Responsible from Within</h2>
+        <p class="lede" data-i18n="res.lede">
+          Our commitment to sustainability also begins with how we work — how we care for
+          people, respect responsible practices, and reduce the impact of our own operations.
+        </p>
+
+        <div class="responsibility">
+          <div class="resp__frame">
+            <span class="resp__aside" data-i18n="res.outside">Outside</span>
+            <p class="resp__aside-copy" data-i18n="res.outside.sub">Technology enabling sustainability action</p>
+          </div>
+          <div class="resp__divider" aria-hidden="true"></div>
+          <div class="resp__frame">
+            <span class="resp__aside" data-i18n="res.within">Within</span>
+            <p class="resp__aside-copy" data-i18n="res.within.sub">How Seeed operates as a company</p>
+          </div>
+        </div>
+
+        <div class="resp-grid">
+          <div class="resp">
+            <img class="resp__img" src="2-图片/7-1.jpg" alt="" />
+            <h3 class="resp__title" data-i18n="res.r1.title">People &amp; Well-being</h3>
+            <p class="resp__text" data-i18n="res.r1.text">Employee well-being, safety, learning, growth, and inclusion.</p>
+          </div>
+          <div class="resp">
+            <img class="resp__img" src="2-图片/7-2.jpg" alt="" />
+            <h3 class="resp__title" data-i18n="res.r2.title">Human Rights &amp; Responsible Practices</h3>
+            <p class="resp__text" data-i18n="res.r2.text">Human rights, labor practices, responsible supply chain, and ethics.</p>
+          </div>
+          <div class="resp">
+            <img class="resp__img" src="2-图片/7-3.jpg" alt="" />
+            <h3 class="resp__title" data-i18n="res.r3.title">Lower-impact Operations</h3>
+            <p class="resp__text" data-i18n="res.r3.text">Energy, waste, recycling, resource efficiency, and lower-carbon operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 8. COLLABORATE ======================= -->
+    <section class="section section--dark" id="collaborate">
+      <div class="container">
+        <div class="collab">
+          <div class="collab__main">
+            <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__mark">›</span><span class="eyebrow__no">07</span> <span data-i18n="col.eyebrow">COLLABORATE WITH SEEED</span></p>
+            <h2 class="h2" data-i18n="col.title">Build what matters, together.</h2>
+            <p class="lede lede--on-dark" data-i18n="col.lede">
+              Working on a meaningful sustainability challenge? We collaborate with
+              researchers, organizations, and communities exploring how technology can
+              create practical, scalable impact.
+            </p>
+
+            <div class="support-note">
+              <span class="support-note__label" data-i18n="col.support.label">Selective Support</span>
+              <p class="support-note__text" data-i18n="col.support.text">
+                Selected projects may receive hardware sponsorship, technical guidance,
+                engineering resources, or ecosystem connections, depending on project fit,
+                feasibility, and potential impact.
+              </p>
+            </div>
+
+            <div class="collab__actions">
+              <a class="btn btn--green" href="#form"><span data-i18n="col.cta1">Tell us about your project</span> <span aria-hidden="true">→</span></a>
+              <a class="btn btn--ghost" href="#stories"><span data-i18n="col.cta2">Explore our work</span> <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+
+          <div class="collab__audiences">
+            <div class="audience audience--1">
+              <span class="audience__who" data-i18n="col.a1.who">For Researchers</span>
+              <p class="audience__q" data-i18n="col.a1.q">Taking research beyond the lab?</p>
+            </div>
+            <div class="audience audience--2">
+              <span class="audience__who" data-i18n="col.a2.who">For Organizations</span>
+              <p class="audience__q" data-i18n="col.a2.q">Looking for a technology partner for an SDG initiative?</p>
+            </div>
+            <div class="audience audience--3">
+              <span class="audience__who" data-i18n="col.a3.who">For Communities</span>
+              <p class="audience__q" data-i18n="col.a3.q">Building solutions rooted in local needs?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 9. FORM ======================= -->
+    <section class="section section--form" id="form">
+      <div class="container">
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__mark">›</span><span class="eyebrow__no">08</span> <span data-i18n="form.eyebrow">PROJECT INTRODUCTION</span></p>
+        <div class="head--center">
+          <h2 class="h2" data-i18n="form.title">Tell us what you are working on.</h2>
+          <p class="lede lede--on-dark" data-i18n="form.lede">
+            Completing this form opens a draft in your email app. Review the message, then
+            select Send to contact <a class="inline-link" href="mailto:branding@seeed.cc">branding@seeed.cc</a>.
+          </p>
+        </div>
+
+        <form class="form" id="project-form" novalidate>
+          <div class="field field--full">
+            <label for="f-project" data-i18n="form.f1">Project / Organization</label>
+            <input id="f-project" name="Project / Organization" type="text" placeholder="e.g. Forest carbon monitoring initiative" autocomplete="organization" required />
+          </div>
+
+          <div class="field">
+            <label for="f-challenge" data-i18n="form.f2">Challenge</label>
+            <select id="f-challenge" name="Challenge">
+              <option value="" selected disabled data-i18n="form.f2.opt">Select a challenge</option>
+              <option data-i18n="form.ch1">Life &amp; Ecosystems</option>
+              <option data-i18n="form.ch2">Climate &amp; Resources</option>
+              <option data-i18n="form.ch3">Learning &amp; Open Knowledge</option>
+              <option data-i18n="form.ch4">Resilient Communities</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="f-stage" data-i18n="form.f3">Stage</label>
+            <select id="f-stage" name="Stage">
+              <option value="" selected disabled data-i18n="form.f3.opt">Select a stage</option>
+              <option data-i18n="form.st1">Research</option>
+              <option data-i18n="form.st2">Early prototype</option>
+              <option data-i18n="form.st3">Field pilot</option>
+              <option data-i18n="form.st4">Scaling</option>
+            </select>
+          </div>
+
+          <div class="field field--full">
+            <label for="f-location" data-i18n="form.f4">Location</label>
+            <input id="f-location" name="Location" type="text" placeholder="Region / country" autocomplete="address-level1" />
+          </div>
+
+          <div class="field field--full">
+            <label for="f-needs" data-i18n="form.f5">Technology needs</label>
+            <textarea id="f-needs" name="Technology needs" rows="3" placeholder="Sensing, edge AI, connectivity, prototyping…"></textarea>
+          </div>
+
+          <div class="field field--full">
+            <label for="f-impact" data-i18n="form.f6">Expected impact</label>
+            <textarea id="f-impact" name="Expected impact" rows="3" placeholder="What change do you hope to see?"></textarea>
+          </div>
+
+          <div class="field field--full">
+            <label for="f-support" data-i18n="form.f7">Type of support requested</label>
+            <input id="f-support" name="Type of support requested" type="text" placeholder="Hardware sponsorship, technical guidance, engineering resources…" />
+          </div>
+
+          <div class="field field--full">
+            <label for="f-site" data-i18n="form.f8">Website / materials</label>
+            <input id="f-site" name="Website / materials" type="url" placeholder="https://" />
+          </div>
+
+          <div class="field field--full">
+            <label for="f-email" data-i18n="form.f9">Contact email</label>
+            <input id="f-email" name="Contact email" type="email" placeholder="you@organization.org" required />
+          </div>
+
+          <div class="form__footer">
+            <button class="btn btn--green" type="submit"><span data-i18n="form.submit">Open email draft</span> <span aria-hidden="true">→</span></button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= 10. FOOTER ======================= -->
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#hero" aria-label="Seeed for SDGs">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__name">Seeed <b>for SDGs</b></span>
+        </a>
+        <p class="footer__line" data-i18n="footer.line">Technology, collaboration, and open innovation for a more sustainable world.</p>
+      </div>
+
+      <nav class="footer__connect" aria-label="Connect">
+        <a href="https://www.seeedstudio.com/" target="_blank" rel="noopener" data-i18n="footer.c.seeed">Seeed Studio</a>
+        <a href="https://mcv.chaihuo.org/en" target="_blank" rel="noopener" data-i18n="footer.c.chaihuo">Chaihuo</a>
+        <a href="https://www.seeedstudio.com/contacts" target="_blank" rel="noopener" data-i18n="footer.c.contact">Contact</a>
+      </nav>
+
+      <nav class="footer__social" aria-label="Social">
+        <a href="https://www.linkedin.com/company/seeedstudio/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="2-图片/icon_1-LinkedIn.svg" alt="LinkedIn" /></a>
+        <a href="https://www.youtube.com/@SeeedStudioSZ/featured" target="_blank" rel="noopener" aria-label="YouTube"><img src="2-图片/icon_2-Youtube.svg" alt="YouTube" /></a>
+        <a href="https://www.instagram.com/seeedstudio" target="_blank" rel="noopener" aria-label="Instagram"><img src="2-图片/icon_3-Instagram.svg" alt="Instagram" /></a>
+        <a href="https://x.com/seeedstudio" target="_blank" rel="noopener" aria-label="X"><img src="2-图片/icon_-4-x.svg" alt="X" /></a>
+        <a href="https://github.com/Seeed-Studio" target="_blank" rel="noopener" aria-label="GitHub"><img src="2-图片/icon_5-Github.svg" alt="GitHub" /></a>
+      </nav>
+    </div>
+
+    <div class="container footer__legal">
+      <p>© 2026 Seeed Studio</p>
+      <nav aria-label="Legal">
+        <a href="https://www.seeedstudio.com/privacy_policy/" target="_blank" rel="noopener" data-i18n="footer.privacy">Privacy Policy</a>
+        <a href="https://www.seeedstudio.com/export_compliance" target="_blank" rel="noopener" data-i18n="footer.export">Export Compliance</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
