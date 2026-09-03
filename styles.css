@@ -1014,6 +1014,7 @@ button, input, textarea, select { font: inherit; color: inherit; }
 .hero {
   padding-top: calc(clamp(4.5rem, 6vw, 5rem) + 68px);
 }
-.diagram__icons img { width: 90px; height: 90px; }
-.diagram__icons { margin-bottom: 0.75rem; }
-.diagram__bridge .diagram__tag { margin-top: 0.75rem; }
+.diagram__bridge { gap: 0; }
+.diagram__icons img { width: 112px; height: 112px; }
+.diagram__icons { margin-bottom: -25px; }
+.diagram__bridge .diagram__tag { margin-top: 5px; }
