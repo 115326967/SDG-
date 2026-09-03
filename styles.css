@@ -1018,3 +1018,11 @@ button, input, textarea, select { font: inherit; color: inherit; }
 .diagram__icons img { width: 112px; height: 112px; }
 .diagram__icons { margin-bottom: -25px; }
 .diagram__bridge .diagram__tag { margin-top: 5px; }
+
+/* View-all button under challenges */
+.view-all { margin-top: 2rem; }
+
+/* Widen right-side audiences to align with container edge */
+.collab { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
+.collab__main .h2 { font-size: 2rem; }
+.collab__audiences { max-width: none; }
