@@ -1026,3 +1026,17 @@ button, input, textarea, select { font: inherit; color: inherit; }
 .collab { grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); }
 .collab__main .h2 { font-size: 2rem; }
 .collab__audiences { max-width: none; }
+
+/* Partners band */
+.section--partners { background: #101c16; padding-block: 2.5rem; }
+.partners { display: flex; align-items: center; justify-content: space-between; gap: 3rem; }
+.partners__label { color: #c7d4c4; font-size: 1.6rem; font-weight: 700; letter-spacing: 0.03em; flex: none; }
+.partners__logos { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.partners__logos img { height: 56px; width: auto; border-radius: 8px; }
+
+/* Diagram bridge text readable on dark section */
+.section--dark .diagram__bridge .diagram__tag { color: var(--brand); }
+
+/* Center enable title & lede */
+#enable .h2 { text-align: center; }
+#enable .enable__intro { margin-inline: auto; text-align: center; }

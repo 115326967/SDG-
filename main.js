@@ -21,7 +21,7 @@
     "hero.tag1": { en: "Field Research", cn: "实地调研" },
     "hero.tag2": { en: "Edge AI", cn: "边缘 AI" },
     "hero.tag3": { en: "Environmental Sensing", cn: "环境传感" },
-    "hero.cta1": { en: "Explore the challenges", cn: "探索挑战领域" },
+    "hero.cta1": { en: "Explore our work", cn: "查看我们的工作" },
     "hero.cta2": { en: "Collaborate with Seeed", cn: "与 Seeed 合作" },
     "hero.featured.tag": { en: "Featured initiative · Interspecies", cn: "精选项目 · 跨物种感知" },
     "hero.featured.copy": { en: "Exploring new ways technology can help us sense, understand, and coexist with other species.", cn: "探索技术如何帮助我们感知、理解并与其他物种共存的新方式。" },
@@ -56,7 +56,7 @@
     "ch.c1.tag": { en: "Featured · Interspecies", cn: "精选 · 跨物种感知" },
     "ch.c1.title": { en: "Life & Ecosystems", cn: "生命与生态" },
     "ch.c1.text": { en: "Biodiversity, wildlife, oceans, forests, and new ways to understand other species.", cn: "生物多样性、野生动植物、海洋、森林，以及理解其他物种的新方式。" },
-    "ch.c1.cta": { en: "Explore Interspecies", cn: "了解 Interspecies" },
+    "ch.c1.cta": { en: "Explore stories", cn: "查看案例故事" },
     "ch.c2.tag": { en: "Water · Energy · Agriculture", cn: "水资源 · 能源 · 农业" },
     "ch.c2.title": { en: "Climate & Resources", cn: "气候与资源" },
     "ch.c2.text": { en: "Practical approaches to sensing, resource efficiency, and resilient infrastructure.", cn: "传感、资源效率与韧性基础设施的实用方法。" },
@@ -109,10 +109,10 @@
     "en.i3.text": { en: "Selected collaborations can access technical guidance, prototyping support, engineering resources, and pathways toward deployment or manufacturing.", cn: "入选的合作可以获得技术指导、原型支持、工程资源，以及通往部署或量产的道路。" },
     "en.i3.tag": { en: "Selective · Case by case", cn: "案例式 · 择优支持" },
     "en.i3.cta": { en: "Talk to us about a project", cn: "与我们聊聊你的项目" },
-    "en.i4.title": { en: "Knowledge & Ecosystem", cn: "知识与生态" },
-    "en.i4.text": { en: "Tutorials, workshops, makerspaces, FabLabs, Chaihuo, and global community connections.", cn: "教程、工作坊、创客空间、FabLab、柴火创客空间，以及全球社区连接。" },
-    "en.i4.tag": { en: "Learn · Share · Build together", cn: "学习 · 分享 · 共同创造" },
-    "en.i4.cta": { en: "Explore learning & community", cn: "探索学习与社区" },
+    "en.i4.title": { en: "Tutorials & Learning Resources", cn: "教程与学习资源" },
+    "en.i4.text": { en: "Product guides, tutorials, and application examples to help you build, configure, and deploy with Seeed hardware.", cn: "产品指南、教程和应用示例，帮助您使用 Seeed 硬件进行构建、配置与部署。" },
+    "en.i4.tag": { en: "Learn · Share · Deploy", cn: "学习 · 分享 · 部署" },
+    "en.i4.cta": { en: "Browse Wiki", cn: "浏览 Wiki" },
 
     "mcv.eyebrow": { en: "SIGNATURE FIELD CAPABILITY", cn: "标志性现场能力" },
     "mcv.title": { en: "Take Innovation to the Field", cn: "把创新带到现场" },
@@ -154,7 +154,7 @@
 
     "form.eyebrow": { en: "PROJECT INTRODUCTION", cn: "项目介绍" },
     "form.title": { en: "Tell us what you are working on.", cn: "告诉我们你在做什么。" },
-    "form.lede": { en: 'Completing this form opens a draft in your email app. Review the message, then select Send to contact <a class="inline-link" href="mailto:branding@seeed.cc">branding@seeed.cc</a>.', cn: '填写本表单将在你的邮件应用中打开一份草稿。请检查内容后选择「发送」，以联系 <a class="inline-link" href="mailto:branding@seeed.cc">branding@seeed.cc</a>。' },
+    "form.lede": { en: 'Completing this form opens a draft in your email app. Review the message, then select Send to contact <a class="inline-link" href="mailto:sustainability@seeed.cc">sustainability@seeed.cc</a>.', cn: '填写本表单将在你的邮件应用中打开一份草稿。请检查内容后选择「发送」，以联系 <a class="inline-link" href="mailto:sustainability@seeed.cc">sustainability@seeed.cc</a>。' },
     "form.f1": { en: "Project / Organization", cn: "项目 / 组织" },
     "form.f2": { en: "Challenge", cn: "挑战领域" },
     "form.f2.opt": { en: "Select a challenge", cn: "选择挑战领域" },
@@ -176,6 +176,7 @@
     "form.f9": { en: "Contact email", cn: "联系邮箱" },
     "form.submit": { en: "Open email draft", cn: "打开邮件草稿" },
 
+    "partners.label": { en: "Partners", cn: "合作伙伴" },
     "footer.line": { en: "Technology, collaboration, and open innovation for a more sustainable world.", cn: "以技术、协作与开放创新，共创更可持续的世界。" },
     "footer.c.seeed": { en: "Seeed Studio", cn: "Seeed Studio" },
     "footer.c.chaihuo": { en: "Chaihuo", cn: "柴火创客空间" },
@@ -291,7 +292,7 @@
   /* ---------- 6. Project introduction → mailto draft ---------- */
   var form = document.getElementById("project-form");
   var status = document.getElementById("form-status");
-  var CONTACT = "branding@seeed.cc";
+  var CONTACT = "sustainability@seeed.cc";
   function read(id) {
     var el = document.getElementById(id);
     return el ? el.value.trim() : "";
