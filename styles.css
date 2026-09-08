@@ -1040,3 +1040,13 @@ button, input, textarea, select { font: inherit; color: inherit; }
 /* Center enable title & lede */
 #enable .h2 { text-align: center; }
 #enable .enable__intro { margin-inline: auto; text-align: center; }
+
+/* Diagram nodes — translucent dark backgrounds + light text */
+.diagram__node:first-child { background: rgba(35, 42, 38, 0.55); }
+.diagram__node:last-child { background: rgba(42, 60, 48, 0.55); }
+.diagram__node .diagram__tag { color: #b5c4b6; }
+.diagram__node .diagram__title { color: #f0f4f0; }
+
+/* Collaborate — h2 size consistent with other sections, audiences equal height */
+.collab__main .h2 { font-size: clamp(1.9rem, 4vw, 2.9rem); white-space: normal; }
+.collab { align-items: stretch; }
