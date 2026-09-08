@@ -343,6 +343,17 @@
     clones.forEach(function (c) { track.appendChild(c); });
   }
 
+  /* ---------- 7b. Partners marquee: duplicate track for a seamless loop ---------- */
+  var partnersTrack = document.querySelector(".partners__track");
+  if (partnersTrack) {
+    var pClones = Array.from(partnersTrack.children).map(function (it) {
+      var c = it.cloneNode(true);
+      c.setAttribute("aria-hidden", "true");
+      return c;
+    });
+    pClones.forEach(function (c) { partnersTrack.appendChild(c); });
+  }
+
   /* ---------- 8. How We Enable slider ---------- */
   var enableSlider = document.getElementById("enable-slider");
   var enableTrack = document.getElementById("enable-track");
@@ -353,7 +364,7 @@
     var nextBtn = enableSlider.querySelector(".enable__nav--next");
     var cur = 0;
     var goTo = function (i) {
-      cur = Math.max(0, Math.min(slides.length - 1, i));
+      cur = ((i % slides.length) + slides.length) % slides.length;
       enableTrack.style.transform = "translateX(-" + (cur * 100) + "%)";
       enableDots.forEach(function (d, idx) { d.classList.toggle("is-active", idx === cur); });
     };
